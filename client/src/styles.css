@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 180px;
+  background: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 12px;
+  background: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  background: #555;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  background: white;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.content {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.controls {
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.controls input {
+  padding: 8px;
+  width: 250px;
+}
+
+.tasks, .logs {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tasks th, .tasks td,
+.logs th, .logs td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* Color coding for Audit Logs */
+.log-create {
+  background: #e6ffe6;
+}
+
+.log-update {
+  background: #fff9cc;
+}
+
+.log-delete {
+  background: #ffe6e6;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 6px;
+}
+
+.modal-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+}
+
+.cancel {
+  background: #ddd;
+}
